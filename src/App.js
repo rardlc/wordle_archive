@@ -25,7 +25,7 @@ const state = {
 }
 
 const getDayAnswer = (day_) => {
-  return wordle_answers[day_-1].toUpperCase()
+  return wordle_answers[day_ - 1].toUpperCase()
 }
 
 // Set the day number of the puzzle to display and show it as the address bar query string
@@ -63,12 +63,12 @@ const getOGDay = () => {
   return diffDays
 }
 
-const wordle_answers = ["rebut", "sissy", "humph", "awake", "blush", "focal", "evade", "naval", "serve", "heath", "dwarf", "model", "karma", "stink", "grade", "quiet", "bench", "abate", "feign", "major", "death", "fresh", "crust", "stool", "colon", "abase", "marry", "react", "batty", "pride", "floss", "helix", "croak", "staff", "paper", "unfed", "whelp", "trawl", "outdo", "adobe", "crazy", "sower", "repay", "digit", "crate", "cluck", "spike", "mimic", "pound", "maxim", "linen", "unmet", "flesh", "booby", "forth", "first", "stand", "belly", "ivory", "seedy", "print", "yearn", "drain", "bribe", "stout", "panel", "crass", "flume", "offal", "agree", "error", "swirl", "argue", "bleed", "delta", "flick", "totem", "wooer", "front", "shrub", "parry", "biome", "lapel", "start", "greet", "goner", "golem", "lusty", "loopy", "round", "audit", "lying", "gamma", "labor", "islet", "civic", "forge", "corny", "moult", "basic", "salad", "agate", "spicy", "spray", "essay", "fjord", "spend", "kebab", "guild", "aback", "motor", "alone", "hatch", "hyper", "thumb", "dowry", "ought", "belch", "dutch", "pilot", "tweed", "comet", "jaunt", "enema", "steed", "abyss", "growl", "fling", "dozen", "boozy", "erode", "world", "gouge", "click", "briar", "great", "altar", "pulpy", "blurt", "coast", "duchy", "groin", "fixer", "group", "rogue", "badly", "smart", "pithy", "gaudy", "chill", "heron", "vodka", "finer", "surer", "radio", "rouge", "perch", "retch", "wrote", "clock", "tilde", "store", "prove", "bring", "solve", "cheat", "grime", "exult", "usher", "epoch", "triad", "break", "rhino", "viral", "conic", "masse", "sonic", "vital", "trace", "using", "peach", "champ", "baton", "brake", "pluck", "craze", "gripe", "weary", "picky", "acute", "ferry", "aside", "tapir", "troll", "unify", "rebus", "boost", "truss", "siege", "tiger", "banal", "slump", "crank", "gorge", "query", "drink", "favor", "abbey", "tangy", "panic", "solar", "shire", "proxy", "point", "robot", "prick", "wince", "crimp", "knoll", "sugar", "whack", "mount", "perky", "could", "wrung", "light", "those", "moist", "shard", "pleat", "aloft", "skill", "elder", "frame", "humor", "pause", "ulcer", "ultra", "robin", "cynic", "aroma", "caulk", "shake", "dodge", "swill", "tacit", "other", "thorn", "trove", "bloke", "vivid", "spill", "chant", "choke", "rupee", "nasty", "mourn", "ahead", "brine", "cloth", "hoard", "sweet", "month", "lapse", "watch", "today", "focus", "smelt", "tease", "cater", "movie", "saute", "allow", "renew", "their", "slosh", "purge", "chest", "depot", "epoxy", "nymph", "found", "shall", "harry", "stove", "lowly", "snout", "trope", "fewer", "shawl", "natal", "comma", "foray", "scare", "stair", "black", "squad", "royal", "chunk", "mince", "shame", "cheek", "ample", "flair", "foyer", "cargo", "oxide", "plant", "olive", "inert", "askew", "heist", "shown", "zesty", "hasty", "trash", "fella", "larva", "forgo", "story", "hairy", "train", "homer", "badge", "midst", "canny", "fetus", "butch", "farce", "slung", "tipsy", "metal", "yield", "delve", "being", "scour", "glass", "gamer", "scrap", "money", "hinge", "album", "vouch", "asset", "tiara", "crept", "bayou", "atoll", "manor", "creak", "showy", "phase", "froth", "depth", "gloom", "flood", "trait", "girth", "piety", "payer", "goose", "float", "donor", "atone", "primo", "apron", "blown", "cacao", "loser", "input", "gloat", "awful", "brink", "smite", "beady", "rusty", "retro", "droll", "gawky", "hutch", "pinto", "gaily", "egret", "lilac", "sever", "field", "fluff", "hydro", "flack", "agape", "voice", "stead", "stalk", "berth", "madam", "night", "bland", "liver", "wedge", "augur", "roomy", "wacky", "flock", "angry", "bobby", "trite", "aphid", "tryst", "midge", "power", "elope", "cinch", "motto", "stomp", "upset", "bluff", "cramp", "quart", "coyly", "youth", "rhyme", "buggy", "alien", "smear", "unfit", "patty", "cling", "glean", "label", "hunky", "khaki", "poker", "gruel", "twice", "twang", "shrug", "treat", "unlit", "waste", "merit", "woven", "octal", "needy", "clown", "widow", "irony", "ruder", "gauze", "chief", "onset", "prize", "fungi", "charm", "gully", "inter", "whoop", "taunt", "leery", "class", "theme", "lofty", "tibia", "booze", "alpha", "thyme", "eclat", "doubt", "parer", "chute", "stick", "trice", "alike", "sooth", "recap", "saint", "liege", "glory", "grate", "admit", "brisk", "soggy", "usurp", "scald", "scorn", "leave", "twine", "sting", "bough", "marsh", "sloth", "dandy", "vigor", "howdy", "enjoy"]
+const wordle_answers = ["rebut", "sissy", "humph", "awake", "blush", "focal", "evade", "naval", "serve", "heath", "dwarf", "model", "karma", "stink", "grade", "quiet", "bench", "abate", "feign", "major", "death", "fresh", "crust", "stool", "colon", "abase", "marry", "react", "batty", "pride", "floss", "helix", "croak", "staff", "paper", "unfed", "whelp", "trawl", "outdo", "adobe", "crazy", "sower", "repay", "digit", "crate", "cluck", "spike", "mimic", "pound", "maxim", "linen", "unmet", "flesh", "booby", "forth", "first", "stand", "belly", "ivory", "seedy", "print", "yearn", "drain", "bribe", "stout", "panel", "crass", "flume", "offal", "agree", "error", "swirl", "argue", "bleed", "delta", "flick", "totem", "wooer", "front", "shrub", "parry", "biome", "lapel", "start", "greet", "goner", "golem", "lusty", "loopy", "round", "audit", "lying", "gamma", "labor", "islet", "civic", "forge", "corny", "moult", "basic", "salad", "agate", "spicy", "spray", "essay", "fjord", "spend", "kebab", "guild", "aback", "motor", "alone", "hatch", "hyper", "thumb", "dowry", "ought", "belch", "dutch", "pilot", "tweed", "comet", "jaunt", "enema", "steed", "abyss", "growl", "fling", "dozen", "boozy", "erode", "world", "gouge", "click", "briar", "great", "altar", "pulpy", "blurt", "coast", "duchy", "groin", "fixer", "group", "rogue", "badly", "smart", "pithy", "gaudy", "chill", "heron", "vodka", "finer", "surer", "radio", "rouge", "perch", "retch", "wrote", "clock", "tilde", "store", "prove", "bring", "solve", "cheat", "grime", "exult", "usher", "epoch", "triad", "break", "rhino", "viral", "conic", "masse", "sonic", "vital", "trace", "using", "peach", "champ", "baton", "brake", "pluck", "craze", "gripe", "weary", "picky", "acute", "ferry", "aside", "tapir", "troll", "unify", "rebus", "boost", "truss", "siege", "tiger", "banal", "slump", "crank", "gorge", "query", "drink", "favor", "abbey", "tangy", "panic", "solar", "shire", "proxy", "point", "robot", "prick", "wince", "crimp", "knoll", "sugar", "whack", "mount", "perky", "could", "wrung", "light", "those", "moist", "shard", "pleat", "aloft", "skill", "elder", "frame", "humor", "pause", "ulcer", "ultra", "robin", "cynic", "agora", "aroma", "caulk", "shake", "pupal", "dodge", "swill", "tacit", "other", "thorn", "trove", "bloke", "vivid", "spill", "chant", "choke", "rupee", "nasty", "mourn", "ahead", "brine", "cloth", "hoard", "sweet", "month", "lapse", "watch", "today", "focus", "smelt", "tease", "cater", "movie", "lynch", "saute", "allow", "renew", "their", "slosh", "purge", "chest", "depot", "epoxy", "nymph", "found", "shall", "harry", "stove", "lowly", "snout", "trope", "fewer", "shawl", "natal", "fibre", "comma", "foray", "scare", "stair", "black", "squad", "royal", "chunk", "mince", "slave", "shame", "cheek", "ample", "flair", "foyer", "cargo", "oxide", "plant", "olive", "inert", "askew", "heist", "shown", "zesty", "hasty", "trash", "fella", "larva", "forgo", "story", "hairy", "train", "homer", "badge", "midst", "canny", "fetus", "butch", "farce", "slung", "tipsy", "metal", "yield", "delve", "being", "scour", "glass", "gamer", "scrap", "money", "hinge", "album", "vouch", "asset", "tiara", "crept", "bayou", "atoll", "manor", "creak", "showy", "phase", "froth", "depth", "gloom", "flood", "trait", "girth", "piety", "payer", "goose", "float", "donor", "atone", "primo", "apron", "blown", "cacao", "loser", "input", "gloat", "awful", "brink", "smite", "beady", "rusty", "retro", "droll", "gawky", "hutch", "pinto", "gaily", "egret", "lilac", "sever", "field", "fluff", "hydro", "flack", "agape", "wench", "voice", "stead", "stalk", "berth", "madam", "night", "bland", "liver", "wedge", "augur", "roomy", "wacky", "flock", "angry", "bobby", "trite", "aphid", "tryst", "midge", "power", "elope", "cinch", "motto", "stomp", "upset", "bluff", "cramp", "quart", "coyly", "youth", "rhyme", "buggy", "alien", "smear", "unfit", "patty", "cling", "glean", "label", "hunky", "khaki", "poker", "gruel", "twice", "twang", "shrug", "treat", "unlit", "waste", "merit", "woven", "octal", "needy", "clown", "widow", "irony", "ruder", "gauze", "chief", "onset", "prize", "fungi", "charm", "gully", "inter", "whoop", "taunt", "leery", "class", "theme", "lofty", "tibia", "booze", "alpha", "thyme", "eclat", "doubt", "parer", "chute", "stick", "trice", "alike", "sooth", "recap", "saint", "liege", "glory", "grate", "admit", "brisk", "soggy", "usurp", "scald", "scorn", "leave", "twine", "sting", "bough", "marsh", "sloth", "dandy", "vigor", "howdy", "enjoy"]
 var day;
 const og_day = getOGDay()
 setDay(getDay(og_day));
 var items_list = []
-for (var i=1;i<=og_day;i++) {
+for (var i = 1; i <= og_day; i++) {
   items_list.push(i)
 }
 
@@ -115,6 +115,8 @@ function App() {
   const [firstTime, setFirstTime] = useLocalStorage('first-time', true)
   const [infoModalIsOpen, setInfoModalIsOpen] = useState(firstTime)
   const [settingsModalIsOpen, setSettingsModalIsOpen] = useState(false)
+  const [god, setGod] = useState(false)
+
 
   const openModal = () => setIsOpen(true)
   const closeModal = () => setIsOpen(false)
@@ -174,9 +176,8 @@ function App() {
   const getCellStyles = (rowNumber, colNumber, letter) => {
     if (rowNumber === currentRow) {
       if (letter) {
-        return `nm-inset-background dark:nm-inset-background-dark text-primary dark:text-primary-dark ${
-          submittedInvalidWord ? 'border border-red-800' : ''
-        }`
+        return `nm-inset-background dark:nm-inset-background-dark text-primary dark:text-primary-dark ${submittedInvalidWord ? 'border border-red-800' : ''
+          }`
       }
       return 'nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark'
     }
@@ -190,12 +191,12 @@ function App() {
           return 'nm-inset-n-green text-gray-50'
         }
       case status.yellow:
-      if (colorBlindMode) {
-        return 'nm-inset-blue-300 text-gray-50'
-      }
-      else {
-        return 'nm-inset-yellow-500 text-gray-50'
-      }
+        if (colorBlindMode) {
+          return 'nm-inset-blue-300 text-gray-50'
+        }
+        else {
+          return 'nm-inset-yellow-500 text-gray-50'
+        }
       case status.gray:
         return 'nm-inset-n-gray text-gray-50'
       default:
@@ -230,8 +231,6 @@ function App() {
       setSubmittedInvalidWord(true)
       return
     }
-
-    if (currentRow === 6) return
 
     updateCellStatuses(word, currentRow)
     updateLetterStatuses(word)
@@ -299,13 +298,24 @@ function App() {
     if (lastFilledRow && isRowAllGreen(lastFilledRow)) {
       setGameState(state.won)
       var newGameStateList = JSON.parse(localStorage.getItem('gameStateList'))
-      newGameStateList[day-1] = state.won
+      newGameStateList[day - 1] = state.won
       localStorage.setItem('gameStateList', JSON.stringify(newGameStateList))
-    } else if (currentRow === 6) {
-      setGameState(state.lost)
-      var newGameStateList = JSON.parse(localStorage.getItem('gameStateList'))
-      newGameStateList[day-1] = state.lost
-      localStorage.setItem('gameStateList', JSON.stringify(newGameStateList))
+    } else if (currentRow === board.length) {
+      if (god) {
+
+        board.push(["", "", "", "", ""])
+        cellStatuses.push(Array(5).fill(status.unguessed))
+        setCellStatuses([...cellStatuses])
+        setBoard([...board])
+
+      } else {
+        setGameState(state.lost)
+        var newGameStateList = JSON.parse(localStorage.getItem('gameStateList'))
+        newGameStateList[day - 1] = state.lost
+        localStorage.setItem('gameStateList', JSON.stringify(newGameStateList))
+      }
+
+
     }
   }, [cellStatuses, currentRow])
 
@@ -346,11 +356,10 @@ function App() {
       height: 'calc(100% - 2rem)',
       width: 'calc(100% - 2rem)',
       backgroundColor: darkMode ? 'hsl(231, 16%, 25%)' : 'hsl(231, 16%, 92%)',
-      boxShadow: `${
-        darkMode
-          ? '0.2em 0.2em calc(0.2em * 2) #252834, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #43475C'
-          : '0.2em 0.2em calc(0.2em * 2) #A3A7BD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF'
-      }`,
+      boxShadow: `${darkMode
+        ? '0.2em 0.2em calc(0.2em * 2) #252834, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #43475C'
+        : '0.2em 0.2em calc(0.2em * 2) #A3A7BD, calc(0.2em * -1) calc(0.2em * -1) calc(0.2em * 2) #FFFFFF'
+        }`,
       border: 'none',
       borderRadius: '1rem',
       maxWidth: '475px',
@@ -370,7 +379,7 @@ function App() {
   }
   const playFirst = () => playDay(1)
   const playPrevious = () => playDay(day - 1)
-  const playRandom = () => playDay(Math.floor(Math.random() * (og_day-1)) + 1)
+  const playRandom = () => playDay(Math.floor(Math.random() * (og_day - 1)) + 1)
   const playNext = () => playDay(day + 1)
   const playLast = () => playDay(og_day)
 
@@ -384,43 +393,43 @@ function App() {
     setGameStateList(gameStateList)
     tempGameStateList = gameStateList
   }
-  for (var i=4;i<=og_day+3;i++) {
-    var textNumber = document.getElementById('headlessui-menu-item-'+i)
-    if(textNumber != null) {
-      if (tempGameStateList[i-1] == state.won) {
+  for (var i = 4; i <= og_day + 3; i++) {
+    var textNumber = document.getElementById('headlessui-menu-item-' + i)
+    if (textNumber != null) {
+      if (tempGameStateList[i - 1] == state.won) {
         textNumber.classList.add('green-text');
       }
-      if (tempGameStateList[i-1] == state.lost) {
+      if (tempGameStateList[i - 1] == state.lost) {
         textNumber.classList.add('red-text');
       }
     }
   }
 
-  var header_symbol = (tempGameStateList[day-1] == 'won') ? ('✔') : ((tempGameStateList[day-1] == 'lost') ? ('✘') : '')
+  var header_symbol = (tempGameStateList[day - 1] == 'won') ? ('✔') : ((tempGameStateList[day - 1] == 'lost') ? ('✘') : '')
 
   var elements = items_list.map(i => {
     return (
       <Menu.Item key={i}>
         {({ active }) =>
-          (
-            <a onMouseDown={() => playDay(i)} className=
-              {
-                classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm '+tempGameStateList[i-1])
-              }>{i+((tempGameStateList[i-1] == state.won) ? ' ✔' : ((tempGameStateList[i-1] == state.lost) ? ' ✘' : ''))}
-            </a>
-          )
+        (
+          <a onMouseDown={() => playDay(i)} className=
+            {
+              classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm ' + tempGameStateList[i - 1])
+            }>{i + ((tempGameStateList[i - 1] == state.won) ? ' ✔' : ((tempGameStateList[i - 1] == state.lost) ? ' ✘' : ''))}
+          </a>
+        )
         }
       </Menu.Item>
     );
   });
 
   if (darkMode == true) {
-    var html = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
-    html.setAttribute( 'class', 'dark-bg' );
+    var html = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
+    html.setAttribute('class', 'dark-bg');
   }
   else {
-    var html = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
-    html.setAttribute( 'class', 'bg' );
+    var html = document.getElementsByTagName('html')[0]; // '0' to assign the first (and only `HTML` tag)
+    html.setAttribute('class', 'bg');
   }
 
   if (window.innerWidth < 600) {
@@ -440,8 +449,20 @@ function App() {
             <button type="button" onClick={() => setInfoModalIsOpen(true)}>
               <Info />
             </button>
+
           </header>
+
+          <div className="flex justify-center items-center w-full">
+              <span className='text-primary dark:text-primary-dark'>God Mode </span>
+              <label className="switch ml-3">
+                <input type="checkbox" onChange={() => { setGod(!god) }} />
+                <span className="slider round"></span>
+              </label>
+            </div>
           <div className="flex flex-force-center items-center py-3">
+
+
+
             <div className="flex items-center px-2">
               <button
                 type="button"
@@ -464,7 +485,7 @@ function App() {
               </button>
             </div>
           </div>
-           <div className="flex flex-force-center items-center py-3">
+          <div className="flex flex-force-center items-center py-3">
             <div className="flex items-center px-2">
               <button
                 type="button"
@@ -479,11 +500,11 @@ function App() {
                     Choose
                   </Menu.Button>
                 </div>
-                  <Menu.Items className="origin-top-right absolute right-0 mt-2 w-42 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-y-scroll h-56">
-                    <div className="py-1">
-                      {elements}
-                    </div>
-                  </Menu.Items>
+                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-42 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-y-scroll h-56">
+                  <div className="py-1">
+                    {elements}
+                  </div>
+                </Menu.Items>
               </Menu>
             </div>
             <div className="flex items-center px-2">
@@ -497,18 +518,20 @@ function App() {
           <div className="flex items-center flex-col py-4">
             <div className="grid grid-cols-5 grid-flow-row gap-4">
               {board.map((row, rowNumber) =>
-                row.map((letter, colNumber) => (
-                  <span
-                    key={colNumber}
-                    className={`${getCellStyles(
-                      rowNumber,
-                      colNumber,
-                      letter
-                    )} inline-flex items-center font-medium justify-center text-xl w-[14vw] h-[14vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded`}
-                  >
-                    {letter}
-                  </span>
-                ))
+                row.map((letter, colNumber) => {
+                  return (
+                    <span
+                      key={colNumber}
+                      className={`${getCellStyles(
+                        rowNumber,
+                        colNumber,
+                        letter
+                      )} inline-flex items-center font-medium justify-center text-xl w-[14vw] h-[14vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded`}
+                    >
+                      {letter}
+                    </span>
+                  )
+                })
               )}
             </div>
           </div>
@@ -577,6 +600,17 @@ function App() {
             </button>
           </header>
           <div className="flex flex-force-center items-center py-3">
+
+            <div className="flex items-center px-3 py-2 mt-4 w-42">
+              <span className='text-primary dark:text-primary-dark'>God Mode </span>
+              <label className="switch ml-3">
+                <input type="checkbox" onChange={() => { setGod(!god) }} />
+                <span className="slider round"></span>
+
+              </label>
+
+            </div>
+
             <div className="flex items-center px-3">
               <button
                 type="button"
@@ -591,6 +625,8 @@ function App() {
                 onClick={playPrevious}>Previous
               </button>
             </div>
+
+
             <div className="flex items-center px-3">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
@@ -598,22 +634,22 @@ function App() {
                     Choose
                   </Menu.Button>
                 </div>
-                  <Menu.Items className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-y-scroll h-56">
-                    <div className="py-1">
-                      <Menu.Item key={i}>
-                        {({ active }) =>
-                          (
-                            <a onMouseDown={() => playRandom()} className=
-                              {
-                                classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm')
-                              }>Random
-                            </a>
-                          )
-                        }
-                      </Menu.Item>
-                      {elements}
-                    </div>
-                  </Menu.Items>
+                <Menu.Items className="origin-top-right absolute right-0 mt-2 w-32 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-y-scroll h-56">
+                  <div className="py-1">
+                    <Menu.Item key={i}>
+                      {({ active }) =>
+                      (
+                        <a onMouseDown={() => playRandom()} className=
+                          {
+                            classNames(active ? 'font-bold text-gray-900' : 'text-gray-700', 'block px-4 py-2 text-sm')
+                          }>Random
+                        </a>
+                      )
+                      }
+                    </Menu.Item>
+                    {elements}
+                  </div>
+                </Menu.Items>
               </Menu>
             </div>
             <div className="flex items-center px-3">
@@ -631,6 +667,8 @@ function App() {
               </button>
             </div>
           </div>
+
+          {/* the board */}
           <div className="flex items-center flex-col py-4">
             <div className="grid grid-cols-5 grid-flow-row gap-4">
               {board.map((row, rowNumber) =>
@@ -657,6 +695,7 @@ function App() {
             styles={modalStyles}
           />
           <EndGameModal
+            god={god}
             isOpen={modalIsOpen}
             handleClose={closeModal}
             styles={modalStyles}

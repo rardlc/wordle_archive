@@ -8,6 +8,7 @@ import WIP from '../data/WIP3.png'
 Modal.setAppElement('#root')
 
 export const EndGameModal = ({
+  god,
   isOpen,
   handleClose,
   styles,
@@ -119,9 +120,10 @@ export const EndGameModal = ({
               <p className="mt-3 text-2xl">
                 Won: {wins}
               </p>
-              <p className="mt-3 text-2xl">
-                Lost: {losses}
-              </p>
+              {
+                god ? <p className="mt-3 text-2xl"> Tries: {currentRow} </p> : <p className="mt-3 text-2xl"> Lost: {losses} </p>
+              }
+
             </>
           )}
           {gameState === state.lost && (
